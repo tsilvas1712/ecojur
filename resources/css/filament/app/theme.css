@@ -1,0 +1,19 @@
+@import '/vendor/filament/filament/resources/css/theme.css';
+
+@config 'tailwind.config.js';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.fi-sidebar {
+    @apply text-black !important;
+}
+
+.fi-active .fi-sidebar-item-active  a {
+  @apply bg-primary text-white !important;
+}
+
+
+
+

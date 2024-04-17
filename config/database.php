@@ -109,6 +109,12 @@ return [
             // 'trust_server_certificate' => env('DB_TRUST_SERVER_CERTIFICATE', 'false'),
         ],
 
+        'mongodb' => [
+            'driver' => 'mongodb',
+            'dsn' => env('MONGO_DB_URI', 'mongodb+srv://admin:password@localhost/?retryWrites=true&w=majority'),
+            'database' => env('MONGO_DB_NAME', 'sample_db'),
+        ],
+
     ],
 
     /*
